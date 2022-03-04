@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+    <style>
+        .container {
+           width: 30%;
+            margin: 0px auto;
+        }
+        .left {
+            width: 40%;
+            float: left;
+        }
+        #class-left {
+            margin-top: 78px;
+        }
+        .right {
+            width: 60%;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="DangKyHocVien.html" method="post">
+        <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+        <div class="left">
+            <p>
+                <label for="yourname">Họ và tên:</label>
+            </p>
+            <p>
+                <label for="date">Ngày sinh:</label>
+            </p>
+            <p>
+                <label for="gender">Giới tính:</label>
+            </p>
+            <p>
+                <label for="locate">Địa chỉ:</label>
+            </p>
+            <p id="class-left">
+                <label for="class">Lớp:</label>
+            </p>
+            <p>
+                <label for="email">Email</label>
+            </p>
+            <p>
+                <label for="number">Phone</label>
+            </p>
+        </div>
+        <div class="right">
+            <p>
+                <input type="text" name="yourname">
+            </p>
+            <p>
+                <input type="text" name="date"><br>
+            </p>
+            <p>
+                <input type="radio" name="male" value="Nam">Nam<input type="radio" name="female">Nữ
+            </p>
+            <p>
+                <textarea cols="25" rows="4" style="resize: none"></textarea>
+            </p>
+            <p>
+                <select>
+                    <option value="pick" >Chọn lớp</option>
+
+                </select>
+            </p>
+            <p>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <input type="text" name="phone">
+            </p>
+            <p>
+                <input type="submit" value="Đặng ký">
+                <input type="reset" value="Nhập lại">
+            </p>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
