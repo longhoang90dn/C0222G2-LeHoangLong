@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển Thị Đầu Ra</title>
+</head>
+<body>
+    <div id="messageDiv"></div>
+    <lable>Nhập vào: </lable> <input type="text" id="name">
+    <button onclick="hello()" >Click Me !</button>
+    <div id="result1"> Kết quả innerText: </div>
+    <div id="result2"> Kết quả innerHTML: </div>
+
+<script>
+    // Hiển thị kết quả sử dụng hàm alert:
+    // function hello() {
+    //     alert("Xin Chào");
+    // }
+    // // Hiển thị kết quả sử dụng hàm document.write:
+    // function hello() {
+    //     document.write("Xin chào");
+    // }
+    // Hiển thị kết quả sử dụng hàm nhập prompt hàm xuất document.write:
+    // function hello() {
+    //     let toan = prompt(" Nhập Điểm Toán: ");
+    //     let ly = prompt(" Nhập Điểm Lý: ");
+    //     let hoa = prompt(" Nhập Điểm Hóa: ");
+    //     document.write(toan);
+    //     document.write("<br>")
+    //     document.write(ly)
+    //     document.write("<br>")
+    //     document.write(hoa)
+    // }
+    // Hiển thị kết quả sử dụng thẻ HTML:
+    function hello() {
+        let ten = document.getElementById("name").value;
+        document.getElementById("result1").innerText = "Xin chào " + ten ;
+        document.getElementById("result2").innerHTML = "<h1> Xin chào " + ten + "</h1>";
+    }
+    // function hello() {
+    //     document.getElementById("messageDiv").value;
+    //     document.write(" Xin Chào ")
+    // }
+    // Hiển thị kết quả sử dụng console.log
+    // function hello() {
+    //     console.log("Xin chào");
+    // }
+
+</script>
+</body>
+</html>
