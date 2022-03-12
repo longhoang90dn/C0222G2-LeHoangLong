@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="so1">
+<input type="text" id="so2">
+<button type="button" onclick="cong()">+</button>
+<button type="button" onclick="tru()">-</button>
+<button type="button" onclick="nhan()">*</button>
+<button type="button" onclick="chia()">/</button>
+<button type="button" onclick="tinh('+')">cộng</button>
+<button type="button" onclick="tinh('-')">trừ</button>
+<button type="button" onclick="tinh('*')">nhân</button>
+<button type="button" onclick="tinh('/')">chia</button>
+<h2 id="ketQua"></h2>
+<script>
+    function tinh(phepTinh) {
+        let result=0;
+        let so1 = parseFloat(document.getElementById("so1").value);
+        let so2 = parseFloat(document.getElementById("so2").value);
+        if(phepTinh==='+'){
+            result = so1 + so2;
+        }else if (phepTinh==='-'){
+            result = so1 - so2;
+        }else if (phepTinh==='*'){
+            result = so1 * so2;
+        }else {
+            result = so1 / so2;
+        }
+        document.getElementById("ketQua").innerHTML=result;
+    }
+
+
+
+    function cong() {
+        let result=0;
+        let so1 = parseFloat(document.getElementById("so1").value);
+        let so2 = parseFloat(document.getElementById("so2").value);
+        result = so1 + so2;
+        document.getElementById("ketQua").innerHTML=result;
+    }
+    function tru() {
+        let result=0;
+        let so1 = parseFloat(document.getElementById("so1").value);
+        let so2 = parseFloat(document.getElementById("so2").value);
+        result = so1 - so2;
+        document.getElementById("ketQua").innerHTML=result;
+    }
+    function nhan() {
+        let result=0;
+        let so1 = parseFloat(document.getElementById("so1").value);
+        let so2 = parseFloat(document.getElementById("so2").value);
+        result = so1 * so2;
+        document.getElementById("ketQua").innerHTML=result;
+    }
+    function chia() {
+        let result=0;
+        let so1 = parseFloat(document.getElementById("so1").value);
+        let so2 = parseFloat(document.getElementById("so2").value);
+        result = so1 / so2;
+        document.getElementById("ketQua").innerHTML=result;
+    }
+</script>
+
+</body>
+</html>

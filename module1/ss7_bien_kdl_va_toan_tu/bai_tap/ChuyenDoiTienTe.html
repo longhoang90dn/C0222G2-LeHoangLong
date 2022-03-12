@@ -7,18 +7,29 @@
 <body>
 <input type="text" id="money">
 <select id="from">
-    <option>Việt Nam</option>
-    <option>Đô la Mỹ</option>
+    <option value="vnd">Việt Nam</option>
+    <option value="usd">Đô la Mỹ</option>
 </select>
 <select id="to">
-    <option>Đô la Mỹ</option>
-    <option>Việt Nam</option>
+    <option value="usd">Đô la Mỹ</option>
+    <option value="vnd">Việt Nam</option>
 </select>
-<button onclick="change">Đổi</button>
+<button type="button" onclick="change()">Đổi</button>
+<p id="ketQua"></p>
 <script>
     function change() {
-        
-
+        let money = document.getElementById("money").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result = 0;
+        if(from==="usd"&& to==="vnd"){
+            result = money * 23000;
+        }else if(from==="vnd" && to==="usd"){
+            result = money / 23000;
+        }else {
+            result = money;
+        }
+        document.getElementById("ketQua").innerText=result;
     }
 
 </script>
