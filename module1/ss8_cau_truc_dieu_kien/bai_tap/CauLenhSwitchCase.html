@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num">
+<button type="button" onclick="dem()">Tính số ngày</button>
+<p id="ketQua"></p>
+<script>
+    function dem() {
+        let num = parseInt(document.getElementById("num").value);
+        switch (num) {
+            case 1:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 1 có 31 ngày';
+                break;
+            case 2:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 2 có 28 hoặc 29 ngày';
+                break;
+            case 3:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 3 có 31 ngày';
+                break;
+            case 4:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 4 có 30 ngày';
+                break;
+            case 5:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 5 có 31 ngày';
+                break;
+            case 6:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 6 có 30 ngày';
+                break;
+            case 7:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 7 có 31 ngày';
+                break;
+            case 8:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 8 có 31 ngày';
+                break;
+            case 9:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 9 có 30 ngày';
+                break;
+            case 10:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 10 có 31 ngày';
+                break;
+            case 11:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 11 có 30 ngày';
+                break;
+            case 12:
+                document.getElementById("ketQua").innerHTML= 'Tháng có 12 có 31 ngày';
+                break;
+        }
+
+    }
+</script>
+</body>
+</html>
