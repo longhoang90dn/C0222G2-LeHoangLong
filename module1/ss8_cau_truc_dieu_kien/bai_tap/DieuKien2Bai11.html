@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let amount = prompt("Nhập tiền lương: ");
+    let thue = 0;
+    if (amount<7){
+        thue = amount*10/100;
+        alert("Thuế thu nhập cá nhân: " + thue);
+    }else if(amount<15){
+        thue = amount*20/100;
+        alert("Thuế thu nhập cá nhân: " + thue);
+    }else if (amount<30){
+        thue = amount*30/100;
+        alert("Thuế thu nhập cá nhân: " + thue);
+    }else {
+        alert(thue);
+    }
+</script>
+</body>
+</html>
