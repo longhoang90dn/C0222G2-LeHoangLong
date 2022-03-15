@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let thongBao;
+    for (let i = 0; i <= 100 ; i++) {
+        if (i%3===0){
+            thongBao = "Fizz";
+            document.write(thongBao + "<br>");
+        } else if (i%5===0){
+            thongBao = "Buzz";
+            document.write(thongBao + "<br>");
+        } else if ((i%3==0) && (i%5==0) ){
+            thongBao = "FizzBuzz";
+            document.write(thongBao + "<br>");
+        }else {
+            thongBao = i;
+            document.write(thongBao + "<br>");
+        }
+    }
+</script>
+</body>
+</html>

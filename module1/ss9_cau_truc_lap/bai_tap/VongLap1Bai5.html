@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 0;
+    let c = 0;
+    let ketQua = "";
+    for (let i = 0; i < 20 ; i++) {
+        if (i==0){
+            a = 1;
+            c = 1;
+        }else {
+            a = b + c;
+            ketQua = a;
+            b = c;
+            c = a;
+            ketQua+=ketQua;
+        }
+    }
+    document.write("Tổng 20 số đầu tiên trong dãy là: " + ketQua);
+</script>
+</body>
+</html>
