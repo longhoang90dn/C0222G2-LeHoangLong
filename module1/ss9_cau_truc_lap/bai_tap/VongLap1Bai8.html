@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="play()">Chơi</button>
+<script>
+    let min;
+    let max;
+    let random = min + Math.floor((max-min)*Math.random());
+    let count = 0;
+    function play() {
+        do{
+            let num = prompt("Nhập vào số");
+            if (num === random){
+                alert("Bạn đã đoán đúng");
+            }else if (num>random){
+                alert("Số bạn nhập nhỏ hơn");
+            }else {
+                alert("Số bạn nhập nhỏ hơn");
+            }
+            count++;
+            if (count=3) {
+                alert("Bạn hết số lần dự đoán");
+            }
+        }while (count<3);
+
+
+    }
+</script>
+</body>
+</html>
