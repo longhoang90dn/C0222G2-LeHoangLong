@@ -6,13 +6,12 @@
 </head>
 <body>
 <script>
-    let myArray = ["khong biet",2,3,4];
-    let dem = 0;
+    let myArray = ["-",1,2,"-"];
     for (let i = 0; i <myArray.length ; i++) {
-        if (isNaN(myArray[i])){
-            dem++;
+        if(myArray[i]==="-"){
+            myArray[i]="_";
         }
-    }console.log(dem);
+    }document.write(myArray);
 </script>
 </body>
 </html>
