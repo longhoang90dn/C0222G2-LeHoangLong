@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nhập số lượng phần tử:
+   let num = parseInt(prompt("Nhập số lượng phần tử: "));
+   let myArray = Array (num);
+   //Nhập phần tử:
+   for (let i = 0; i < num ; i++) {
+       myArray[i] = parseInt(prompt("Nhập vào phần tử: " + i ))
+   }
+   // gắn cờ để xét điều kiện:
+   let flag = true;
+   let v = parseInt(prompt("Nhập phần tử cần tìm: "))
+   for (let i = 0; i <myArray.length ; i++) {
+       if (myArray[i]=== v){
+       flag =true;
+       break;
+       }else {
+           flag = false;
+       }
+   }
+   if (flag===true){
+       console.log(v + " is in the array");
+   }else {
+       console.log(v + " Not is in the array");
+   }
+
+</script>
+</body>
+</html>

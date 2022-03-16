@@ -7,12 +7,19 @@
 <body>
 <script>
     let num = [2,3,4,5,6,7,8,9,10];
-    let max = Math.max.apply(Math,num);
+    let max = num[0];
+    let total = 0;
+    let trungBinh;
     for (let i = 0; i <num.length ; i++) {
-        if (num[i] === max){
-        console.log ("Số lớn nhất là: " num[i]);
+        if (num[i] > max){
+            max = num[i];
+            console.log("Max = " + max);
         }
-    }
+        total+=num[i];
+        trungBinh = total/num.length;
+    }console.log("Giá trị trung bình: " + trungBinh);
+
+
 
 </script>
 </body>
