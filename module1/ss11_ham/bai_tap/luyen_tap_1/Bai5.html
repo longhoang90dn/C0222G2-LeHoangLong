@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let starName1 = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let starName2 = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let name = prompt("Nhập thông tin: ");
+    findName(name);
+    function findName(name) {
+        let flag = false;
+        for (let i = 0; i < starName1.length ; i++) {
+            if (name === starName1[i]){
+                flag = true;
+                break;
+            }
+        }
+        if(flag === true){
+            for (let i = 0; i < starName1.length ; i++) {
+                if (name === starName1[i]){
+                    return starName2[i];
+                }
+            }
+        } else {
+            return "Khong ton tai!";
+        }
+    }
+    console.log(findName(name));
+
+</script>
+</body>
+</html>

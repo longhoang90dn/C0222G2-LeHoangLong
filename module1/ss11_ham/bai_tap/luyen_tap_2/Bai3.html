@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập vào số cần tính: "));
+    let giaiThua = 1;
+    function tinh(giaiThua) {
+        for (let i = 1; i <= num ; i++) {
+            giaiThua = giaiThua * i;
+        }
+        return giaiThua;
+    }
+    tinh(num);
+    console.log(tinh(giaiThua));
+</script>
+</body>
+</html>
