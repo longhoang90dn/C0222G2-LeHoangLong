@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapVao = parseInt(prompt("Nhập vào ký tự cần tìm: "));
+    let arr = [4,4,5,9,2,4,5,6];
+    let flag = true;
+    let count = 0;
+    function check(arr,nhapVao){
+        for (let i = 0; i <arr.length ; i++) {
+            if(arr[i] === nhapVao){
+            flag = true;
+            break;
+            }else {
+                flag = false;
+            }
+        }
+        if (flag){
+            for (let i = 0; i <arr.length ; i++) {
+                if (arr[i]=== nhapVao){
+                    count++;
+                }
+            }
+        }else {
+            return -1;
+        }
+        return count;
+    }
+    console.log(check(arr, nhapVao));
+</script>
+</body>
+</html>
